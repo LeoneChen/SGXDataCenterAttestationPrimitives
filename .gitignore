@@ -23,3 +23,6 @@
 /QuoteGeneration/build/
 **/Debug/
 **/Release/
+
+QuoteGeneration/BSD-3-Clause.txt
+QuoteVerification/sgxssl/

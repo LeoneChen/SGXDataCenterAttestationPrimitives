@@ -36,7 +36,7 @@ include ../../../../buildenv.mk
 TVL_CPP_SRCS := $(wildcard *.cpp)
 TVL_OBJS := $(TVL_CPP_SRCS:.cpp=.o)
 
-COMMON_INCLUDE	:= -I$(COMMON_DIR)/inc -I$(COMMON_DIR)/inc/tlibc -I$(LINUX_SDK_DIR)/tlibcxx/include
+COMMON_INCLUDE	:= -I$(COMMON_DIR)/inc -include "cstring" -include "algorithm"
 TVL_INC  += $(COMMON_INCLUDE) -I../QvE/Include -I$(DCAP_DIR)/QuoteGeneration/quote_wrapper/common/inc -I$(DCAP_DIR)/QuoteGeneration/pce_wrapper/inc
 
 
